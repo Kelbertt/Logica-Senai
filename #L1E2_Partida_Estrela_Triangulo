@@ -3,20 +3,26 @@ algoritmo "Partida_Estrela_Triangulo"
 var
    comando : inteiro
    ciclo : inteiro
+   m: caractere
 
 inicio
 
-  repita
-  escreval("Deseja iniciar o motor? 1 para sim e -1 para não")
-  leia(Comando)
+  
+  escreval("Deseja iniciar o motor? (S/N)")
+  leia(m)
 
+  se m = "S" entao
   escreval("Motor Ligado em Estrela")
   para ciclo de 1 ate 5 faca
   escreval ("Ciclo", ciclo)
   fimpara
+  senao se m = "N" entao
+  escreval ("Motor não iniciado")
+  fimse
+  fimse
 
-  escreval("Motor Ligado, ligação feita em triângulo")
-  ate Comando <- 0
+  escreval("Motor Ligado em triângulo")
+  
 
 
 fimalgoritmo
