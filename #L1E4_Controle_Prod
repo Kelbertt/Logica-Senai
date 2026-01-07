@@ -1,0 +1,35 @@
+algoritmo "Controle_Pecas"
+
+var
+   quant : inteiro
+   peso : real
+   i : inteiro
+   aprovadas : inteiro
+   reprovadas : inteiro
+
+inicio
+
+   
+
+   escreval("Informe a quantidade de peças produzidas:")
+   leia(quant)
+
+   para i de 1 ate quant faca
+      escreval("Informe o peso da peça ", i, ":")
+      leia(peso)
+
+      se (peso >= 490) entao
+         aprovadas <- aprovadas + 1
+      senao se (peso <= 510) entao
+         aprovadas <- aprovadas + 1
+      senao
+         reprovadas <- reprovadas + 1
+      fimse
+      fimse
+   fimpara
+
+   escreval("Total de peças produzidas: ", quant)
+   escreval("Total de peças aprovadas: ",  aprovadas)
+   escreval("Total de peças reprovadas: ",  reprovadas)
+
+fimalgoritmo
