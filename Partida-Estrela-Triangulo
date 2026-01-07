@@ -1,0 +1,22 @@
+algoritmo "Partida_Estrela_Triangulo"
+
+var
+   comando : inteiro
+   ciclo : inteiro
+
+inicio
+
+  repita
+  escreval("Deseja iniciar o motor? 1 para sim e -1 para não")
+  leia(Comando)
+
+  escreval("Motor Ligado em Estrela")
+  para ciclo de 1 ate 5 faca
+  escreval ("Ciclo", ciclo)
+  fimpara
+
+  escreval("Motor Ligado, ligação feita em triângulo")
+  ate Comando <- 0
+
+
+fimalgoritmo
