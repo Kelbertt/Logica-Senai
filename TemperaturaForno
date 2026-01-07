@@ -1,0 +1,41 @@
+algoritmo "Forno Industrial - Segurança de Temperatura"
+
+var
+    temp : real
+
+inicio
+    escreval("### Sistema de Monitoramento de Temperatura do Forno ###")
+    enquanto temp < 280 faca
+    
+        escreva("Digite a temperatura atual (°C): ")
+        leia(temp)
+
+        se (temp < 200) entao
+            escreval("Temperatura: ", temp, "°C - Aquecimento maximo")
+        
+        senao se (temp >= 200) entao e se (temp <= 250) entao 
+            escreval("Temperatura: ", temp, "°C - Operacao Normal")
+
+        senao se (temp > 250) entao e se(temp < 280) entao 
+            escreval("!!! ALERTA DE RISCO !!!")
+            escreval("Temperatura: ", temp, "°C - Desligar forno IMEDIATO")
+
+     
+         
+         senao
+            escreval("Tudo normal")
+            
+        fimse
+        fimse
+        fimse
+        fimse
+        fimse
+        
+
+        escreval("------------------------------------------------------")
+  
+   fimenquanto
+    escreval("!!! PARADA AUTOMATICA DO SISTEMA !!!")
+    escreval("Sistema finalizado.")
+
+fimalgoritmo
