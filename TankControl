@@ -1,0 +1,35 @@
+algoritmo "Controle de Tanque com Alarmes"
+
+var
+   N: real
+   T: inteiro
+
+inicio
+   repita
+      escreval("---Nível da bomba---")
+      escreval("Digite o nível de sensor da bomba: ")
+      leia(N)
+         se N < 20 entao
+         escreval("Ligar bomba de enchimento")
+         senao se N > 90 entao
+         escreval("Desligar a bomba")
+         senao 
+            escreval("Nível normal")
+         
+         fimse
+         fimse
+   ate N <- 0
+
+   repita
+      escreval("---Temperatura da bomba---")
+      escreval("Digite a temperatura da bomba: ")
+      leia(T) 
+      se T > 80 entao
+         escreval("Emitir alarme de superaquecimento")
+      senao
+         escreval("Temperatura Normal")
+         fimse
+      ate T <- 0
+   
+   
+fimalgoritmo
