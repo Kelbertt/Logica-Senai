@@ -1,0 +1,177 @@
+questão 1
+
+algoritmo "Ciclo de Maquina de Lavar"
+
+var
+comando: inteiro
+ciclo: inteiro
+
+inicio
+	
+	repita
+	escreval("Digite o numero 1 para iniciar os ciclos")
+	escreval("Digite um número negativo para encerrar")
+	leia(comando)
+
+	se comando >= 0 então
+	escreval("")
+	escreval("Enchendo o tanque...")
+	
+	escreval("")
+	para ciclo de 1 ate 3 faca
+	escreval("Centrifugando ", ciclo, " de 3")
+	fimpara
+
+	escreval("")
+	escreval("Ciclo Concluído! Roupas limpas.")
+
+	fimse
+	fimse
+
+	ate comando < 0
+
+fimalgoritmo
+
+===================================================================================
+questão 2:
+
+algoritmo "Controle de Qualidade de Laranjas"
+var
+    d: real
+    tl: inteiro
+    ap: inteiro
+    rj: inteiro
+    
+inicio
+    ap <- 0
+    rj <- 0
+    
+    escreva("Quantas laranjas serão processadas? ")
+    leia(tl)
+    
+    
+    para i de 1 ate tl faca
+        escreva("Informe o diâmetro da laranja ", i, ": ")
+        leia(d)
+        
+        se (d >= 8) entao
+            escreval("Laranja aprovada")
+            ap <- ap + 1
+        senao
+            escreval("Laranja rejeitada")
+            rj <- rj + 1
+        fimse
+    fimpara
+    
+    escreval("")
+    escreval("== Resultado Final ==")
+    escreval("Total processado: ", tl)
+    escreval("Laranjas aprovadas: ", ap)
+    escreval("Laranjas rejeitadas: ", rj)
+fimalgoritmo
+
+================================================================
+
+questão 3:
+
+algoritmo "ControladorEstufa"
+
+var
+   um: real
+   lumin: real
+   controle: inteiro
+
+inicio
+
+
+   escreval("--- SISTEMA DE CONTROLE DE ESTUFA ---")
+   escreval("Instrução: Digite um valor positivo para continuar ou negativo para sair.")
+   escreval("")
+
+   
+
+   repita
+      leia(controle)
+      escreva("Digite a umidade do solo (0-100%): ")
+      leia(um)
+
+      escreva("Digite a luminosidade (lux): ")
+      leia(lumin)
+
+      
+      se um < 30 entao
+         escreval("STATUS: Umidade baixa. Válvula LIGADA.")
+           
+     
+      senao se um > 70 entao
+         escreval("STATUS: Umidade ideal atingida. Válvula DESLIGADA.")
+            
+         
+
+      senao se lumin > 1000 entao
+         escreval("ALERTA: Ativar sombrite (luz intensa)")
+      fimse
+      fimse
+      fimse
+    
+
+   ate controle < 0
+
+   escreval("Sistema encerrado pelo operador.")
+
+fimalgoritmo
+
+
+===============================
+
+questão 4:
+
+algoritmo "Monitoramento de enchimento de garrafas"
+
+var
+   v: inteiro    
+   v3: real      
+   vb: inteiro   
+   va: inteiro  
+   vo: inteiro   
+
+inicio
+     vb <- 0
+   va <- 0
+   vo <- 0
+
+   para v de 1 ate 10 faca
+      escreva("Digite o volume da garrafa ", v, " (em ml): ")
+      leia(v3)
+
+      se v3 < 485 entao
+         escreval("Erro: volume baixo! (Sub-preenchimento)")
+         vb <- vb + 1
+      senao
+         se v3 > 515 entao
+            escreval("Erro: volume alto! (Sobre-preenchimento)")
+            va <- va + 1
+         senao
+            escreval("Volume OK")
+            vo <- vo + 1
+         fimse
+      fimse
+   fimpara
+
+   // Relatório Final (fora do laço para aparecer apenas uma vez)
+   escreval("---------------------------------------")
+   escreval("Garrafas volume baixo: ", vb)
+   escreval("Garrafas com volume alto: ", va)
+   escreval("Garrafas com volume OK: ", vo)
+
+   se (vb + va) > 4 entao
+      escreval("ALERTA: Solicitar calibração da máquina!")
+   fimse
+
+fimalgoritmo
+
+====================
+
+
+
+
