@@ -1,0 +1,39 @@
+algoritmo "Analise de Consumo Eletrico de Motores"
+
+var
+   i: inteiro 
+   m: inteiro
+   a: real
+   on: inteiro 
+   sob: inteiro 
+   di: inteiro
+
+inicio
+
+   on <- 0
+   sob <- 0
+   di <- 0
+
+   escreval("Informe a quantidade de motores: ")
+   leia(m)
+
+   para i de 1 ate m faca
+      escreval("Informe a corrente do motor ", i, ": ")
+      leia(a)
+
+      se a <= 12 entao
+         on <- on + 1
+      senao se a <= 18 entao
+         sob <- sob + 1
+      senao
+         di <- di + 1
+      fimse
+      fimse
+
+   fimpara
+
+   escreval("Total de motores operando normalmente: ", on)
+   escreval("Total de motores em sobrecarga: ", sob)
+   escreval("Total de motores que devem ser desligados imediatamente: ", di)
+
+fimalgoritmo
