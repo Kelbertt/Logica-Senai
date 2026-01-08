@@ -1,0 +1,29 @@
+algoritmo "Monitoramento de Pressão Histórico"
+
+var
+   p: inteiro
+   m: inteiro
+   lu: inteiro
+
+
+inicio  
+
+   escreval("==== Monitoramento de Pressão com Historico ===" )
+
+   repita 
+   escreval("Iniciar o Monitoramento de Pressão deve ser iniciado?")
+   leia(m)
+   
+   se m > 0 entao
+
+   escreval("")
+   escreval("Monitoramento Iniciado")
+   escreval("")
+   escreval("Pressão acima de 120 pode ser considerado crítica!!!")
+
+   fimse
+   
+
+   ate m <- 0 
+
+fimalgoritmo
