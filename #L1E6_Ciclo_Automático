@@ -1,0 +1,45 @@
+algoritmo "Ciclo Automatico de Maquina Industrial"
+
+var
+   comando: inteiro
+   ciclo: inteiro
+
+inicio
+
+   escreval("=== SISTEMA DE CONTROLE INDUSTRIAL ===")
+
+   repita
+      escreval("")
+      escreval("Digite um valor para iniciar o ciclo")
+      escreval("Digite um numero negativo para encerrar o sistema")
+      leia(comando)
+      escreval("")
+
+      se comando >= 0 entao
+
+         escreval("")
+         escreval("1. Verificacao de sensores...")
+         escreval("Sensores verificados com sucesso.")
+
+         escreval("")
+         escreval("2. Acionamento de atuadores...")
+         escreval("Atuadores acionados.")
+
+         escreval("")
+         escreval("3. Processamento em andamento...")
+         para ciclo de 1 ate 5 faca
+            escreval("Processando ciclo ", ciclo, " de 5")
+         fimpara
+
+         escreval("")
+         escreval("4. Finalizacao do ciclo.")
+         escreval("Ciclo concluido com sucesso.")
+
+      fimse
+
+   ate comando < 0
+
+   escreval("")
+   escreval("Sistema encerrado pelo operador.")
+
+fimalgoritmo
