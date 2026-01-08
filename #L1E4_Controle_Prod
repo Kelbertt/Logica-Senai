@@ -9,7 +9,8 @@ var
 
 inicio
 
-   
+   aprovados <- 0
+   reprovados <- 0
 
    escreval("Informe a quantidade de peças produzidas:")
    leia(quant)
